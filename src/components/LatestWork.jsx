@@ -52,7 +52,6 @@ const LatestWork = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="group relative bg-zinc-900/60 backdrop-blur-md p-1 rounded-2xl overflow-hidden transition-transform duration-500 hover:-translate-y-2 hover:scale-105 border border-transparent hover:border-green-500/60 shadow-xl hover:shadow-green-700/30"
           >
-            {/* Glow border effect */}
             <div className="absolute inset-0 rounded-2xl pointer-events-none group-hover:animate-pulse group-hover:bg-gradient-to-r from-green-500/10 via-emerald-500/10 to-lime-500/10 transition-all duration-500"></div>
 
             <div className="overflow-hidden rounded-xl relative z-10">

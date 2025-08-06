@@ -46,7 +46,7 @@ const Featured = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }} // 🔁 Animation restarts
+          viewport={{ once: false, amount: 0.2 }} 
         >
           {companies.map((company, index) => (
             <motion.div
@@ -54,7 +54,7 @@ const Featured = () => {
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.4 }} // 🔁 Restart each item
+              viewport={{ once: false, amount: 0.4 }} 
               className="bg-[#1a1a1a] p-2 rounded-sm flex items-center justify-center w-52 h-20 hover:bg-green-500"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}

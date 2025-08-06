@@ -113,13 +113,13 @@ const Choose = () => {
           >
             Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor. Lorem ipsum dolor sit amet consectetur sadipscing elitr.
           </motion.p>
-          <motion.button
-            className="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Contact us
-          </motion.button>
+            <motion.button
+                className="bg-green-400 text-black font-semibold py-2 px-6 rounded-full hover:bg-green-500 transition shadow-lg"
+                whileHover={{ scale: 1.1, boxShadow: '0 0 20px #22c55e' }}
+                transition={{ type: 'spring', stiffness: 300 }}
+            >
+                Contact us
+            </motion.button>
         </motion.div>
       </div>
     </div>

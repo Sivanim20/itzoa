@@ -6,6 +6,7 @@ import Marketing from './components/Marketing'
 import Choose from './components/Choose'
 import LatestWork from './components/LatestWork'
 import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Choose/>
       <LatestWork/>
       <Testimonials/>
+      <Contact/>
     </div>
   )
 }
