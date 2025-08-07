@@ -35,7 +35,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`md:hidden fixed top-0 left-0 w-full h-full bg-black z-[9999] transition-all duration-300 ease-in-out ${showMobileMenu ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-        <div className="flex justify-end p-2 cursor-pointer">
+        <div className="flex justify-end p-4 cursor-pointer">
           <img onClick={() => setShowMobileMenu(false)} src={cross_icon} className="w-14" alt='' />
         </div>
         <ul className="flex flex-col items-center gap-4 mt-5 px-5 text-lg font-medium text-white">
