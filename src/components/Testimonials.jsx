@@ -34,13 +34,13 @@ const testimonials = [
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
 
-  // Auto-slide every 5 seconds
+  // Auto-slide
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
 
-    return () => clearInterval(interval); // Clean up on unmount
+    return () => clearInterval(interval); 
   }, []);
 
   const swipeHandlers = useSwipeable({
