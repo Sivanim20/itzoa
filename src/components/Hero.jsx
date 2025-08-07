@@ -52,7 +52,7 @@ const Hero = () => {
 
       {/* Right Side*/}
       <motion.div
-        className="relative mt-12 md:mt-0 w-[300px] md:w-[400px] h-auto z-10 left-10"
+        className="relative w-[200px] md:w-[300px] lg:[400px] h-auto z-10 left-10"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 1 }}
