@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from 'framer-motion';
 
-import seoIcon from "../assets/icons/seo.png";
+import seoIcon from "../assets/icons/Seo.png";
 import webdevIcon from "../assets/icons/webdev.png";
 import videoIcon from "../assets/icons/video.png";
 import contentIcon from "../assets/icons/content.png";
@@ -64,11 +64,11 @@ const Marketing = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          <h2 className="text-3xl font-bold leading-snug">
+          <h2 className="text-3xl font-bold leading-snug mt-2">
             Our Digital <br /> Marketing Expertise
           </h2>
           <p className="text-gray-400 text-base leading-relaxed">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sit
+            We drive growth through smart digital marketing—combining SEO, content, ads, and social media to connect your brand with the right audience.
           </p>
         </motion.div>
         <ExpertiseCard 
@@ -90,11 +90,11 @@ const Marketing = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          <h2 className="text-4xl font-bold leading-snug">
+          <h2 className="text-4xl font-bold leading-snug mt-2">
             Our Digital <br /> Marketing Expertise
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sit
+            We drive growth through smart digital marketing—combining SEO, content, ads, and social media to connect your brand with the right audience.
           </p>
         </motion.div>
         {expertiseItems.slice(2).map((item, idx) => (

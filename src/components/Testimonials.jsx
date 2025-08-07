@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,26 +12,36 @@ const testimonials = [
     title: "Founder, Alpha Group",
     image: zoe,
     message:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+      "Working with this team was an exceptional experience. Their creativity, professionalism, and attention to detail truly brought our vision to life.",
   },
   {
     name: "Don Joe",
     title: "Founder, Alpha Group",
     image: don,
     message:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+      "Their dedication and technical expertise exceeded our expectations. The project was delivered on time, with outstanding quality and seamless communication.",
   },
   {
     name: "Alex Rider",
     title: "Founder, Alpha Group",
     image: alex,
     message:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+      "From start to finish, the process was smooth and efficient. Their innovative solutions helped elevate our brand and reach a wider audience.",
   },
 ];
 
+
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
+
+  // Auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval); // Clean up on unmount
+  }, []);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => setIndex((prev) => (prev + 1) % testimonials.length),
@@ -45,7 +55,7 @@ const Testimonials = () => {
     <div className="bg-black text-white py-16 px-6 md:px-20 overflow-hidden">
       <h2 className="text-3xl font-bold mb-10">Testimonials</h2>
 
-      <div {...swipeHandlers} className="relative max-w-xl mx-auto">
+      <div {...swipeHandlers} className="relative max-w-2xl mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -59,7 +69,7 @@ const Testimonials = () => {
               <img
                 src={testimonials[index].image}
                 alt={testimonials[index].name}
-                className="w-11 h-11 rounded-full mr-4"
+                className="w-12 h-12 rounded-full mr-4"
               />
               <div>
                 <p className="font-semibold">{testimonials[index].name}</p>

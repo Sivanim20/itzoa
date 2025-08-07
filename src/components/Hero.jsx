@@ -39,9 +39,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1 }}
         >
-          Lorem ipsum dolor sit amet, consectetur sadipscing elitr,<br />
-          sed diam nonumy eirmod tempor Lorem ipsum dolor sit <br />
-          amet consectetur sadipscing elitr
+          We combine creativity with strategy to deliver impactful digital marketing solutions. 
+          From brand storytelling to performance-driven campaigns, we help businesses grow and connect with their audience effectively.
         </motion.p>
 
         <motion.button

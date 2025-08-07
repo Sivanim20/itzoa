@@ -111,7 +111,7 @@ const Choose = () => {
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor. Lorem ipsum dolor sit amet consectetur sadipscing elitr.
+            At Itzoa, we blend creativity with strategy to deliver digital solutions that drive real results. With a focus on innovation, transparency, and client success, we help brands grow, engage, and thrive in the digital world.
           </motion.p>
             <motion.button
                 className="bg-green-400 text-black font-semibold py-2 px-6 rounded-full hover:bg-green-500 transition shadow-lg"

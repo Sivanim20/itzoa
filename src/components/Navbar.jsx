@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="absolute top-0 left-0 w-full z-50 bg-transparent">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
-        <div className='text-3xl font-extrabold text-green-600 -left-32'>Itzoa</div>
+        <div className='text-3xl font-extrabold text-green-600 -left-40'>Itz<span className='text-white'>oa</span></div>
         <div className="w-1/7"></div>
         <ul className="hidden md:flex gap-10 text-white">
           <div className="absolute top-[-60px] left-[50%] w-28 h-28  bg-[#303158] rounded-full -z-10"></div>

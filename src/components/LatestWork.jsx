@@ -8,17 +8,17 @@ const workItems = [
   {
     title: "Artem - Digital Marketing campaign",
     image: artemImg,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    description: "We developed a data-driven strategy for Artem, using SEO, ads, and content to boost visibility, engagement, and conversions.",
   },
   {
     title: "Mayhem - Search engine Optimization",
     image: mayhemImg,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    description: "We optimized Mayhem’s online presence through tailored SEO strategies, improving search rankings, organic traffic, and overall visibility.",
   },
   {
     title: "Basic - Pay per click (PPC)",
     image: basicImg,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    description: "We launched targeted PPC campaigns for Basic, driving high-quality traffic and maximizing ROI through strategic ad placements and keyword optimization.",
   },
 ];
 
