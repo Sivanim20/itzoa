@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import AsusIcon from "../assets/icons/asus.png";
 import AllianzIcon from "../assets/icons/allianz.png";
 import ChaseIcon from "../assets/icons/chase.png";
@@ -33,7 +32,7 @@ const itemVariants = {
 
 const Featured = () => {
   return (
-    <section className="bg-black text-white py-8 px-4">
+    <div className="bg-black text-white py-8 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center space-x-4 mb-6">
           <h2 className="text-xl font-semibold">Featured in</h2>
@@ -68,7 +67,7 @@ const Featured = () => {
           ))}
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

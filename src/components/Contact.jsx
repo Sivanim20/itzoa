@@ -14,8 +14,8 @@ const Contact = () => {
         viewport={{ once: true }}
       >
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-          Creative <span className="text-green-400">Digital</span><br />
-          Marketing Agency
+          Creative <span className="text-green-400">Digital<br />
+          Marketing</span> Agency
         </h1>
         <p className="text-gray-400 mb-8">
           Lorem ipsum dolor sit amet, consectetur sadipscing elitr,<br />

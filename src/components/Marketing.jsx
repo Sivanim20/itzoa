@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from 'framer-motion';
-
 import seoIcon from "../assets/icons/Seo.png";
 import webdevIcon from "../assets/icons/webdev.png";
 import videoIcon from "../assets/icons/video.png";
@@ -65,7 +64,7 @@ const Marketing = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2 className="text-3xl font-bold leading-snug mt-2">
-            Our Digital <br /> Marketing Expertise
+            Our <span className="text-green-400">Digital <br /> Marketing</span> Expertise
           </h2>
           <p className="text-gray-400 text-base leading-relaxed">
             We drive growth through smart digital marketing—combining SEO, content, ads, and social media to connect your brand with the right audience.
@@ -91,7 +90,7 @@ const Marketing = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2 className="text-4xl font-bold leading-snug mt-2">
-            Our Digital <br /> Marketing Expertise
+            Our <span className="text-green-400">Digital <br /> Marketing</span> Expertise
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed">
             We drive growth through smart digital marketing—combining SEO, content, ads, and social media to connect your brand with the right audience.

@@ -28,6 +28,8 @@ const Choose = () => {
       className="relative bg-black text-white py-16 px-6 md:px-20 overflow-hidden"
     >
         <div className="absolute bottom-20 -right-24 w-72 h-72 bg-transparent border-[1px] opacity-20 rounded-full  z-0 "></div>
+        <div className="absolute bottom-[50%] right-[50%] w-8 h-8 bg-green-600 opacity-30 rounded-sm z-0 rotate-45"></div>
+        <div className="absolute top-16 right-[30%] w-6 h-6 bg-blue-600 opacity-30 rounded-sm z-0 rotate-45"></div>
         <div className="absolute top-40 -right-16 w-80 h-80 bg-transparent border-[1px] opacity-20 rounded-full  z-0 "></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
         <motion.div
@@ -87,7 +89,7 @@ const Choose = () => {
             </div>
           </motion.div>
         </motion.div>
-
+        
         <motion.div
           className="text-center md:text-left max-w-lg"
           variants={fadeInFromRight}
@@ -102,7 +104,7 @@ const Choose = () => {
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Why should you <br /> choose Itzoa
+            Why should you <br /> choose Axinor
           </motion.h2>
           <motion.p
             className="text-gray-300 text-sm mb-6"
@@ -111,14 +113,14 @@ const Choose = () => {
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            At Itzoa, we blend creativity with strategy to deliver digital solutions that drive real results. With a focus on innovation, transparency, and client success, we help brands grow, engage, and thrive in the digital world.
+            At Axinor, we blend creativity with strategy to deliver digital solutions that drive real results. With a focus on innovation, transparency, and client success, we help brands grow, engage, and thrive in the digital world.
           </motion.p>
             <motion.button
                 className="bg-green-400 text-black font-semibold py-2 px-6 rounded-full hover:bg-green-500 transition shadow-lg"
                 whileHover={{ scale: 1.1, boxShadow: '0 0 20px #22c55e' }}
                 transition={{ type: 'spring', stiffness: 300 }}
             >
-                Contact us
+              Contact us
             </motion.button>
         </motion.div>
       </div>

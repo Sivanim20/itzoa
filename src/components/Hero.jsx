@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import coverImg from '../assets/Cover_im.png';
-import Navbar from './Navbar';
 import googleImg from '../assets/Gg.png';
 import fbImg from '../assets/facebook.png';
 import mediaImg from '../assets/media_icon.png';
@@ -10,14 +9,13 @@ const Hero = () => {
   return (
     <div className="bg-black text-white px-6 md:px-20 py-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
 
-      {/* Rotating Background Circle */}
       <motion.div
         className="absolute top-0 right-64 w-36 h-36 bg-[#303158] rounded-full -z-10"
         animate={{ rotate: 360 }}
         transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
       />
 
-      {/* Left Content */}
+      {/* Left side */}
       <motion.div
         className="max-w-xl z-10"
         initial={{ opacity: 0, x: -50 }}
@@ -25,12 +23,12 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         <motion.h1
-          className="text-4xl md:text-5xl font-bold leading-tight mb-6"
+          className="text-4xl md:text-5xl font-bold leading-tight mt-10 mb-4 z-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Creative Digital <br /> Marketing Agency
+          Creative <span className='text-green-400'>Digital <br /> Marketing </span> Agency
         </motion.h1>
 
         <motion.p
@@ -52,7 +50,7 @@ const Hero = () => {
         </motion.button>
       </motion.div>
 
-      {/* Right Image + Decorations */}
+      {/* Right Side*/}
       <motion.div
         className="relative mt-12 md:mt-0 w-[300px] md:w-[400px] h-auto z-10"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -66,16 +64,9 @@ const Hero = () => {
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
         />
+        <div className="absolute top-10 right-20 w-32 h-32 bg-[#5c3d1b] rounded-full -z-10"/>
+        <div className="absolute bottom-5 left-0 w-32 h-32 bg-[#1b425c] rounded-3xl -z-10"/>
 
-        <div
-          className="absolute top-10 right-20 w-32 h-32 bg-[#5c3d1b] rounded-full -z-10"
-        />
-
-        <div
-          className="absolute bottom-5 left-0 w-32 h-32 bg-[#1b425c] rounded-3xl -z-10"
-        />
-
-        {/*Icons */}
         <motion.img
           src={mediaImg}
           alt="Media"
@@ -103,7 +94,6 @@ const Hero = () => {
           transition={{ delay: 2 }}
         />
 
-        {/* Shapes */}
         <motion.div
           className="absolute top-10 right-0 w-4 h-4 bg-orange-500 rounded-sm rotate-45"
           animate={{ rotate: [0, 45, 0] }}
