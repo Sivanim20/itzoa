@@ -14,7 +14,7 @@ const Navbar = () => {
   }, [showMobileMenu]);
 
   return (
-    <div className="absolute top-0 left-0 w-full z-50 bg-transparent overflow-hidden">
+    <div className="absolute w-full z-50 bg-transparent overflow-hidden">
       <img
         className="absolute w-28 sm:w-32 lg:w-44 -top-4 lg:-top-6 md:left-5 left-2"
         src={logo}
