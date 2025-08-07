@@ -14,7 +14,7 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6'>
+        <h1 className='text-3xl sm:text-3xl lg:text-5xl md:text-4xl font-bold leading-tight mb-6'>
           Creative{' '}
           <span className='text-green-400'>Digital<br className='hidden sm:block' /> Marketing</span>{' '}
           Agency
@@ -56,9 +56,9 @@ const Contact = () => {
         />
       </motion.div>
 
-      <div className='absolute top-0 right-52 w-3 h-3 bg-purple-500 rounded-sm'></div>
-      <div className='absolute top-28 right-10 w-4 h-4 bg-orange-500 rotate-45'></div>
-      <div className='absolute top-44 right-[75%] lg:right-[35%] w-4 h-4 bg-green-500 rotate-45'></div>
+      <div className='absolute top-10 right-52 w-3 h-3 bg-purple-500 rounded-sm rotate-45'></div>
+      <div className='absolute top-32 right-[20%] md:right-[15%] lg:right-[10%] w-4 h-4 bg-orange-500 rotate-45'></div>
+      <div className='absolute top-44 right-[75%] md:right-[50%] lg:right-[30%] w-4 h-4 bg-green-500 rotate-45'></div>
     </section>
   );
 };

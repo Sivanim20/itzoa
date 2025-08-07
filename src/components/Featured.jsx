@@ -26,26 +26,25 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 10 },
+  hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
 };
 
 const Featured = () => {
   return (
-    <div className="bg-black text-white py-8 px-4">
+    <div className="bg-black text-white py-12 px-4 sm:px-8 md:px-16">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center space-x-4 mb-6">
-          <h2 className="text-xl font-semibold">Featured in</h2>
-          <span className="border-l border-gray-600 h-5"></span>
-          <span className="text-gray-500 text-lg">Our Certification</span>
+        <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-8">
+          <h2 className="text-lg sm:text-xl font-semibold">Featured in</h2>
+          <span className="border-l border-gray-600 h-5" />
+          <span className="text-gray-500 text-sm sm:text-base">Our Certification</span>
         </div>
-
         <motion.div
-          className="flex flex-wrap gap-6"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }} 
+          viewport={{ once: false, amount: 0.2 }}
         >
           {companies.map((company, index) => (
             <motion.div
@@ -53,15 +52,14 @@ const Featured = () => {
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.4 }} 
-              className="bg-[#1a1a1a] p-2 rounded-sm flex items-center justify-center w-52 h-20 hover:bg-green-500"
+              viewport={{ once: false, amount: 0.4 }}
+              className="bg-[#1a1a1a] p-4 rounded-md flex items-center justify-center w-full h-16 sm:h-20 hover:bg-green-500 transition-colors"
               whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
             >
               <img
                 src={company.icon}
                 alt={company.name}
-                className="h-5 object-contain"
+                className="h-5 sm:h-6 object-contain"
               />
             </motion.div>
           ))}

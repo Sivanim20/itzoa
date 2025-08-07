@@ -13,7 +13,7 @@ const Choose = () => {
   };
 
   const fadeInFromRight = {
-    hidden: { opacity: 0, x: 80 },
+    hidden: { opacity: 0, x: 30 },
     visible: { opacity: 1, x: 0 },
   };
 
@@ -33,13 +33,13 @@ const Choose = () => {
         <div className="absolute top-40 -right-16 w-80 h-80 bg-transparent border-[1px] opacity-20 rounded-full  z-0 "></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
         <motion.div
-          className="relative flex-shrink-0"
+          className="relative flex-shrink-0 mr-6"
           variants={fadeInFromLeft}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           transition={{ duration: 0.8 }}
         >
-          <div className="absolute bg-[#2c1e00] w-60 h-72 md:w-72 md:h-80 rounded-3xl bottom-0 z-0"></div>
+          <div className="absolute bg-[#2c1e00] sm:w-60 sm:h-72 md:w-72 md:h-80 lg:w-72 lg:h-80 w-56 h-60 rounded-3xl bottom-0 z-0"></div>
           <img
             src={manImage}
             alt="man"
@@ -76,7 +76,7 @@ const Choose = () => {
 
           {/* Customer*/}
           <motion.div
-            className="absolute top-28 -right-44 flex flex-col gap-1 w-auto z-20"
+            className="absolute top-20 lg:top-28 sm:top-16 -right-28 lg:-right-44 sm:-right-44 flex flex-col gap-1 w-[50%] lg:w-auto  sm:w-[60%] z-20 "
             variants={fadeInUp}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
@@ -91,7 +91,7 @@ const Choose = () => {
         </motion.div>
         
         <motion.div
-          className="text-center md:text-left max-w-lg"
+          className=" max-w-lg w-full md:w-1/2 text-center md:text-left  z-10"
           variants={fadeInFromRight}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -104,7 +104,7 @@ const Choose = () => {
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Why should you <br /> choose Axinor
+            Why should you <br /> choose <span className='text-green-500'>Axi</span>no<span className='text-green-500'>r</span>
           </motion.h2>
           <motion.p
             className="text-gray-300 text-sm mb-6"

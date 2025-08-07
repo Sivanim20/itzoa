@@ -7,7 +7,7 @@ import mediaImg from '../assets/media_icon.png';
 
 const Hero = () => {
   return (
-    <div className="bg-black text-white px-6 md:px-20 py-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+    <div className="bg-black text-white px-6 sm:px-10 md:px-20 py-16 top-8 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
 
       <motion.div
         className="absolute top-0 right-64 w-36 h-36 bg-[#303158] rounded-full -z-10"
@@ -17,13 +17,13 @@ const Hero = () => {
 
       {/* Left side */}
       <motion.div
-        className="max-w-xl z-10"
+        className="w-full md:w-1/2 text-center md:text-left  z-10"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
         <motion.h1
-          className="text-4xl md:text-5xl font-bold leading-tight mt-10 mb-4 z-0"
+          className="text-3xl sm:text-4xl md:text-4xl g:text-5xl font-bold leading-tight mt-10 mb-4 z-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -32,7 +32,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-gray-400 mb-6 leading-relaxed"
+          className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1 }}
@@ -52,7 +52,7 @@ const Hero = () => {
 
       {/* Right Side*/}
       <motion.div
-        className="relative mt-12 md:mt-0 w-[300px] md:w-[400px] h-auto z-10"
+        className="relative mt-14 ml-4 md:mt-10 w-[250px] sm:w-[250px] md:w-[300px] lg:w-[380px] h-auto z-10"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 1 }}
