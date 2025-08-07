@@ -55,6 +55,7 @@ const Contact = () => {
       
       <div className="absolute top-10 right-40 w-3 h-3 bg-purple-500 rounded-sm"></div>
       <div className="absolute top-32 right-20 w-4 h-4 bg-orange-500 rotate-45"></div>
+      <div className="absolute top-10 right-24 w-4 h-4 bg-green-500 rotate-45"></div>
     </section>
   );
 };
