@@ -4,11 +4,13 @@ import coverImg from '../assets/Cover_im.png';
 import googleImg from '../assets/Gg.png';
 import fbImg from '../assets/facebook.png';
 import mediaImg from '../assets/media_icon.png';
+import Navbar from './Navbar';
 
 
 const Hero = () => {
   return (
-    <div className="w-screen" >
+    <div id="Hero" className="w-screen" >
+      <Navbar/>
       <div className="bg-black text-white  py-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden left-0">
 
         {/* Left side */}

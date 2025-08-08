@@ -5,7 +5,7 @@ import { Phone } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div className='w-screen bg-black text-white py-16 px-4 sm:px-8 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden gap-12'>
+    <div id="Contact" className='w-screen bg-black text-white py-16 px-4 sm:px-8 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden gap-12'>
       <motion.div
         className='w-screen p-4 text-center md:text-left'
         initial={{ opacity: 0, y: 20 }}

@@ -38,7 +38,7 @@ const cardVariants = {
 
 const LatestWork = () => {
   return (
-    <div className="bg-black text-white py-16 px-6 md:px-20 w-screen">
+    <div id="LatestWork" className="bg-black text-white py-16 px-6 md:px-20 w-screen">
       <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center lg:text-left md:text-left">Our latest work</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
