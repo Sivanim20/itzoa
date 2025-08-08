@@ -77,7 +77,7 @@ const Choose = () => {
 
             {/* Customer*/}
             <motion.div
-              className="absolute top-24 lg:top-28 sm:top-16 -right-16 lg:-right-44 sm:-right-36 flex flex-col gap-1 w-[30%] lg:w-auto  sm:w-[50%] z-20 "
+              className="absolute top-20 lg:top-28 sm:top-16 -right-16 lg:-right-44 sm:-right-36 flex flex-col gap-1 w-[30%] lg:w-auto  sm:w-[40%] z-20 "
               variants={fadeInUp}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}

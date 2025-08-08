@@ -28,7 +28,7 @@ const cardVariants = {
 };
 
 const textVariants = {
-  hidden: { opacity: 0, x: 50 },
+  hidden: { opacity: 0, x: 30 },
   visible: {
     opacity: 1,
     x: 0,
@@ -55,11 +55,11 @@ const ExpertiseCard = ({ title, icon, index }) => (
 
 const Marketing = () => {
   return (
-    <div className="w-screen">
-      <div className="bg-black text-white py-16 ">
+    <div className="w-screen overflow-hidden">
+      <div className="bg-black text-white py-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-12 sm:px-12 md:px-12 lg:px-20">
           <motion.div
-            className="block sm:hidden md:hidden space-y-4"
+            className="block sm:hidden md:hidden overflow-hidden space-y-4"
             variants={textVariants}
             initial="hidden"
             whileInView="visible"
