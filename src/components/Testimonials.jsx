@@ -52,47 +52,49 @@ const Testimonials = () => {
   });
 
   return (
-    <div className="bg-black text-white py-16 px-6 md:px-20 overflow-hidden">
-      <h2 className="text-3xl font-bold mb-10">Testimonials</h2>
+    <div className="w-screen">
+      <div className="bg-black text-white py-16 px-6 md:px-20 overflow-hidden items-center">
+        <h2 className="text-3xl font-bold mb-10">Testimonials</h2>
 
-      <div {...swipeHandlers} className="relative max-w-2xl mx-auto">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={index}
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="bg-zinc-900 p-6 rounded-xl shadow-lg"
-          >
-            <div className="flex items-center mb-4">
-              <img
-                src={testimonials[index].image}
-                alt={testimonials[index].name}
-                className="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <p className="font-semibold">{testimonials[index].name}</p>
-                <p className="text-sm text-gray-400">
-                  {testimonials[index].title}
-                </p>
+        <div {...swipeHandlers} className="relative max-w-2xl mx-auto">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="bg-zinc-900 p-6 rounded-xl shadow-lg"
+            >
+              <div className="flex items-center mb-4">
+                <img
+                  src={testimonials[index].image}
+                  alt={testimonials[index].name}
+                  className="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p className="font-semibold">{testimonials[index].name}</p>
+                  <p className="text-sm text-gray-400">
+                    {testimonials[index].title}
+                  </p>
+                </div>
               </div>
-            </div>
-            <p className="text-gray-300">{testimonials[index].message}</p>
-          </motion.div>
-        </AnimatePresence>
+              <p className="text-gray-300">{testimonials[index].message}</p>
+            </motion.div>
+          </AnimatePresence>
 
-        {/* Dots Indicator */}
-        <div className="flex justify-center gap-2 mt-6">
-          {testimonials.map((_, i) => (
-            <span
-              key={i}
-              onClick={() => setIndex(i)}
-              className={`h-[6px] w-[20px] rounded-full cursor-pointer transition-all duration-300 ${
-                i === index ? "bg-white" : "bg-gray-500"
-              }`}
-            />
-          ))}
+          {/* Dots Indicator */}
+          <div className="flex justify-center gap-2 mt-6">
+            {testimonials.map((_, i) => (
+              <span
+                key={i}
+                onClick={() => setIndex(i)}
+                className={`h-[6px] w-[20px] rounded-full cursor-pointer transition-all duration-300 ${
+                  i === index ? "bg-white" : "bg-gray-500"
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

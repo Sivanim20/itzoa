@@ -27,9 +27,9 @@ const Choose = () => {
       ref={ref}
       className="relative bg-black text-white py-16 px-6 md:px-20 overflow-hidden"
     >
-        <div className="absolute bottom-20 -right-24 w-72 h-72 bg-transparent border-[1px] opacity-20 rounded-full  z-0 "></div>
-        <div className="absolute bottom-[50%] right-[50%] w-8 h-8 bg-green-600 opacity-30 rounded-sm z-0 rotate-45"></div>
-        <div className="absolute top-16 right-[30%] w-6 h-6 bg-blue-600 opacity-30 rounded-sm z-0 rotate-45"></div>
+        <div className="absolute overflow-hidden bottom-20 -right-24 w-72 h-72 bg-transparent border-[1px] opacity-20 rounded-full  z-0 "></div>
+        <div className="absolute overflow-hidden bottom-[50%] right-[50%] w-8 h-8 bg-green-600 opacity-30 rounded-sm z-0 rotate-45"></div>
+        <div className="absolute overflow-hidden top-16 right-[30%] w-6 h-6 bg-blue-600 opacity-30 rounded-sm z-0 rotate-45"></div>
         <div className="absolute top-40 -right-16 w-80 h-80 bg-transparent border-[1px] opacity-20 rounded-full  z-0 "></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
         <motion.div
@@ -76,13 +76,13 @@ const Choose = () => {
 
           {/* Customer*/}
           <motion.div
-            className="absolute top-20 lg:top-28 sm:top-16 -right-28 lg:-right-44 sm:-right-44 flex flex-col gap-1 w-[50%] lg:w-auto  sm:w-[60%] z-20 "
+            className="absolute top-20 lg:top-28 sm:top-16 -right-24 lg:-right-44 sm:-right-36 flex flex-col gap-1 w-[30%] lg:w-auto  sm:w-[50%] z-20 "
             variants={fadeInUp}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <div className="text-sm text-white mb-1 text-left">Our Customers</div>
+            <div className="text-[10px] sm:text-xs lg:text-sm text-white mb-1 text-left">Our Customers</div>
             <div className="flex items-center">
               <img src={customer} alt="customers" className="w-2/3" />
               <span className="text-orange-500 text-sm font-semibold ml-2">+25K</span>
