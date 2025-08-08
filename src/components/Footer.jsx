@@ -66,7 +66,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-lg">Contact</h3>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>Email: info@axinor.com</li>
-              <li>Phone: +91 9876543210</li>
+              <li>Phone: +91 999-99-999</li>
               <li>Location: Trivandrum, India</li>
             </ul>
             <div className="flex gap-4 mt-8 text-xl text-white">
