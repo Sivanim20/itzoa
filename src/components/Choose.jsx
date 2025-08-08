@@ -23,7 +23,7 @@ const Choose = () => {
   };
 
   return (
-    <div className='w-screen'>
+    <div className='w-screen overflow-hidden'>
       <div
         ref={ref}
         className="relative bg-black text-white py-16 px-6 md:px-20 overflow-hidden"
