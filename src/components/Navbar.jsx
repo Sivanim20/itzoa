@@ -25,8 +25,8 @@ const Navbar = () => {
 
 
   return (
-    <div className='w-screen'>
-      <div className="absolute top-0 left-0 w-full z-50 bg-transparent">
+    <div className='w-screen pr-4'>
+      <div className="absolute top-0 left-0 z-50 bg-transparent w-screen">
         <img className='absolute w-32 sm:w-32 lg:w-44 -top-4 lg:-top-6 md:left-5 left-0 lg:left-10' src={logo} alt='logo'/>
         <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
           <div className="w-1/7"></div>

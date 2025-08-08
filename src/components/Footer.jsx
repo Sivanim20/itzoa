@@ -15,7 +15,7 @@ const fadeInUp = {
 
 const Footer = () => {
   return (
-    <div className="bg-[#070a07] text-white px-6 md:px-20 py-12">
+    <div className="bg-[#070a07] text-white px-6 md:px-20 py-12 w-screen">
       <motion.div
         className="grid grid-cols-1 lg:grid-cols-2 gap-10"
         variants={fadeInUp}

@@ -5,15 +5,15 @@ import googleImg from '../assets/Gg.png';
 import fbImg from '../assets/facebook.png';
 import mediaImg from '../assets/media_icon.png';
 
+
 const Hero = () => {
   return (
     <div className="w-screen" >
-    <div className="bg-black text-white  py-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
-
+    <div className="bg-black text-white  py-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden left-0">
 
       {/* Left side */}
       <motion.div
-        className="max-w-xl z-10 px-6 md:px-20"
+        className="max-w-lg z-10 px-6 md:px-20"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -47,8 +47,9 @@ const Hero = () => {
       </motion.div>
 
       {/* Right Side*/}
+      <div className=' w-1/3'>
       <motion.div
-        className="relative w-[200px] md:w-[300px] lg:[400px] h-auto z-10 left-0 sm:left-5 lg:left-1 mt-4"
+        className="relative w-[200px] md:w-[300px] lg:[400px] left-0 h-auto z-10 mt-4"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 1 }}
@@ -56,7 +57,7 @@ const Hero = () => {
         <motion.img
           src={coverImg}
           alt="Businessman"
-          className="w-[90%] object-contain z-10 relative"
+          className="w-[90%] object-contain z-10 relative left-0"
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
         />
@@ -114,6 +115,7 @@ const Hero = () => {
           transition={{ repeat: Infinity, duration: 3 }}
         />
       </motion.div>
+      </div>
     </div>
     </div>
   );

@@ -32,6 +32,7 @@ const itemVariants = {
 
 const Featured = () => {
   return (
+    <div className="w-screen">
     <div className="bg-black text-white py-12 px-4 sm:px-8 md:px-16">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-8">
@@ -65,6 +66,7 @@ const Featured = () => {
           ))}
         </motion.div>
       </div>
+    </div>
     </div>
   );
 };

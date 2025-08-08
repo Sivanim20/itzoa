@@ -5,7 +5,7 @@ import { Phone } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section className='bg-black text-white py-16 px-4 sm:px-8 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden gap-12'>
+    <div className='w-screen bg-black text-white py-16 px-4 sm:px-8 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden gap-12'>
 
       <motion.div
         className='w-full md:w-1/2 text-center md:text-left'
@@ -59,7 +59,7 @@ const Contact = () => {
       <div className='absolute top-10 right-52 w-3 h-3 bg-purple-500 rounded-sm rotate-45'></div>
       <div className='absolute top-32 right-[20%] md:right-[15%] lg:right-[10%] w-4 h-4 bg-orange-500 rotate-45'></div>
       <div className='absolute top-44 right-[75%] md:right-[50%] lg:right-[30%] w-4 h-4 bg-green-500 rotate-45'></div>
-    </section>
+    </div>
   );
 };
 

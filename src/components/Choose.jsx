@@ -23,6 +23,7 @@ const Choose = () => {
   };
 
   return (
+    <div className='w-screen'>
     <div
       ref={ref}
       className="relative bg-black text-white py-16 px-6 md:px-20 overflow-hidden"
@@ -76,7 +77,7 @@ const Choose = () => {
 
           {/* Customer*/}
           <motion.div
-            className="absolute top-20 lg:top-28 sm:top-16 -right-24 lg:-right-44 sm:-right-36 flex flex-col gap-1 w-[30%] lg:w-auto  sm:w-[50%] z-20 "
+            className="absolute top-24 lg:top-28 sm:top-16 -right-16 lg:-right-44 sm:-right-36 flex flex-col gap-1 w-[30%] lg:w-auto  sm:w-[50%] z-20 "
             variants={fadeInUp}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
@@ -124,6 +125,7 @@ const Choose = () => {
             </motion.button>
         </motion.div>
       </div>
+    </div>
     </div>
   );
 };
