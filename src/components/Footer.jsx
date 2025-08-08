@@ -9,13 +9,13 @@ const fadeInRight = {
 };
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, x: 30 },
+  visible: { opacity: 1, x: 0 },
 };
 
 const Footer = () => {
   return (
-    <div className="bg-[#070a07] text-white px-6 md:px-20 py-12 w-screen">
+    <div className="bg-[#070a07] text-white px-6 md:px-20 py-12 w-screen overflow-hidden">
       <motion.div
         className="grid grid-cols-1 lg:grid-cols-2 gap-10"
         variants={fadeInUp}
@@ -46,10 +46,10 @@ const Footer = () => {
         >
           <div>
             <ul className="text-gray-400 space-y-6 text-xl font-semibold">
-              <li><a href="#" className="hover:text-green-500 transition">Home</a></li>
-              <li><a href="#" className="hover:text-green-500 transition">About Us</a></li>
-              <li><a href="#" className="hover:text-green-500 transition">Services</a></li>
-              <li><a href="#" className="hover:text-green-500 transition">Contact</a></li>
+              <li><a href="#Hero" className="hover:text-green-500 transition">Home</a></li>
+              <li><a href="#Choose" className="hover:text-green-500 transition">About Us</a></li>
+              <li><a href="#Marketing" className="hover:text-green-500 transition">Services</a></li>
+              <li><a href="#Contact" className="hover:text-green-500 transition">Contact</a></li>
             </ul>
           </div>
 
