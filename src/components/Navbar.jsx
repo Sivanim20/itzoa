@@ -60,10 +60,10 @@ const Navbar = () => {
           </div>
           <div>
             <ul className='flex flex-col items-center gap-4 mt-[20%] w-screen text-lg font-medium text-white'>
-              <a onClick={() => setShowMobileMenu(false)} href="#Home" className='w-1/3 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>About Us</a>
-              <a onClick={() => setShowMobileMenu(false)} href="#About" className='w-1/3 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Services</a>
-              <a onClick={() => setShowMobileMenu(false)} href="#LatestWork" className='w-1/3 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Latest Work</a>
-              <a onClick={() => setShowMobileMenu(false)} href="#Testimonails" className='w-1/3 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Testimonails</a>
+              <a onClick={() => setShowMobileMenu(false)} href="#Home" className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>About Us</a>
+              <a onClick={() => setShowMobileMenu(false)} href="#About" className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Services</a>
+              <a onClick={() => setShowMobileMenu(false)} href="#LatestWork" className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Latest Work</a>
+              <a onClick={() => setShowMobileMenu(false)} href="#Testimonails" className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Testimonails</a>
             </ul>
           </div>
         </div>
