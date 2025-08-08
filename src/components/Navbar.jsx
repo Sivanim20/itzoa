@@ -35,7 +35,7 @@ const Navbar = () => {
             <a href='#Marketing'className='cursor-pointer hover:border-b-2 hover:border-green-600'>About Us</a>
             <a href='#Marketing' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Services</a>
             <a href='#LatestWork' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Latest Work</a>
-            <a href='#Testimonails' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Testimonails</a>
+            <a href='#Testimonials' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Testimonials</a>
           </ul>
           <button className='hidden md:block bg-green-500 font-semibold text-black px-8 py-2 rounded-full'>Contact us</button>
           <img onClick={() => setShowMobileMenu(true)} src={menu_icon} className="md:hidden w-7 cursor-pointer" alt='' />
@@ -62,7 +62,7 @@ const Navbar = () => {
               <a onClick={() => setShowMobileMenu(false)} href='#Marketing' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>About Us</a>
               <a onClick={() => setShowMobileMenu(false)} href='#Marketing' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Services</a>
               <a onClick={() => setShowMobileMenu(false)} href='#LatestWork' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Latest Work</a>
-              <a onClick={() => setShowMobileMenu(false)} href='#Testimonails' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Testimonails</a>
+              <a onClick={() => setShowMobileMenu(false)} href='#Testimonials' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Testimonials</a>
             </ul>
           </div>
         </div>
