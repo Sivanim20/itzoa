@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className='absolute hidden lg:block top-[-60px] left-[50%] w-28 h-28 bg-[#303158] rounded-full -z-10'></div>
             <div className='absolute hidden lg:block top-11 left-[30%] w-20 h-20 bg-[#30583d] rounded-full -z-20'></div>
             <a href='#Marketing'className='cursor-pointer hover:border-b-2 hover:border-green-600'>About Us</a>
-            <a href='#Marketing' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Services</a>
+            <a href='#Services' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Services</a>
             <a href='#LatestWork' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Latest Work</a>
             <a href='#Testimonials' className='cursor-pointer hover:border-b-2 hover:border-green-600'>Testimonials</a>
           </ul>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <div>
             <ul className='flex flex-col items-center gap-4 mt-[20%] w-screen text-lg font-medium text-white'>
               <a onClick={() => setShowMobileMenu(false)} href='#Marketing' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>About Us</a>
-              <a onClick={() => setShowMobileMenu(false)} href='#Marketing' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Services</a>
+              <a onClick={() => setShowMobileMenu(false)} href='#Services' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Services</a>
               <a onClick={() => setShowMobileMenu(false)} href='#LatestWork' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Latest Work</a>
               <a onClick={() => setShowMobileMenu(false)} href='#Testimonials' className='w-1/2 text-center px-6 py-2 rounded-full inline-block shadow-inner shadow-green-700 hover:border-[1px] hover:border-green-600'>Testimonials</a>
             </ul>
