@@ -47,7 +47,7 @@ const Services = () => {
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: false, amount: 0.4 }}
+        viewport={{ once: false, amount: 0.2 }}
         >
             <h2 className="text-4xl md:text-5xl font-light text-center p-6">
                 <span className="font-bold">WHAT</span> we do
@@ -65,12 +65,12 @@ const Services = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: false, amount: 0.4 }}
+        viewport={{ once: false, amount: 0.2 }}
         >
             {services.map((service, index) => (
             <div 
             key={index} 
-            className={'group p-8 border-[1px] border-gray-800 flex flex-col justify-between border-t-4 lg:border-t-[1px] border-t-green-600 lg:border-t-gray-600 hover:border-t-4 hover:border-t-green-600 transition-all transform duration-300 h-60 lg:h-80'}
+            className={'group p-8 border-[1px] border-gray-800 flex flex-col justify-between border-t-4 lg:border-t-[1px] border-t-green-600 lg:border-t-gray-600 hover:border-t-4 hover:border-t-green-600 transition-all transform duration-300 h-80 lg:h-96'}
             >
                 <div>
                     <h3 className="text-xl font-bold">{service.title}</h3>
