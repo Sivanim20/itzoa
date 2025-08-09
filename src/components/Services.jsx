@@ -1,7 +1,8 @@
 import React from 'react';
 import { ArrowRight } from "lucide-react";
 import { FaArrowRight } from 'react-icons/fa';
-
+import { motion } from 'framer-motion';
+ 
 
 const services = [
   {
@@ -40,8 +41,14 @@ const services = [
 
 const Services = () => {
   return (
-    <div id="Services" className='w-screen overflow-hidden bg-black text-white py-10'>
-        <div className="flex flex-col md:flex-row justify-between text-center items-center px-6 md:px-[20%] lg:px-[30%]">
+    <div id="Services" className='w-screen overflow-hidden bg-black text-white py-10 pt-10'>
+        <motion.div 
+        className="flex flex-col md:flex-row justify-between text-center items-center px-6 md:px-[20%] lg:px-[30%]"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false, amount: 0.4 }}
+        >
             <h2 className="text-4xl md:text-5xl font-light text-center p-6">
                 <span className="font-bold">WHAT</span> we do
             </h2>
@@ -51,9 +58,15 @@ const Services = () => {
                     <ArrowRight size={16} />
                 </span>
             </button>
-        </div>
+        </motion.div>
         {/* service card */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 px-8 pt-8">
+        <motion.div 
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 px-8 pt-8"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false, amount: 0.4 }}
+        >
             {services.map((service, index) => (
             <div 
             key={index} 
@@ -70,7 +83,7 @@ const Services = () => {
                 </button>
                 </div>
             ))}
-            </div>
+            </motion.div>
         </div>
     )
 }

@@ -8,10 +8,10 @@ const Contact = () => {
     <div id="Contact" className='w-screen bg-black text-white py-16 px-4 sm:px-8 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden gap-12'>
       <motion.div
         className='w-screen p-4 text-center md:text-left'
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.3 }}
       >
         <h1 className='text-3xl sm:text-3xl lg:text-5xl md:text-4xl font-bold leading-tight mb-6'>
           Creative{' '}
@@ -43,10 +43,10 @@ const Contact = () => {
 
       <motion.div
         className='w-full md:w-1/2 flex justify-center md:justify-end'
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <img
           src={PersonImage}
